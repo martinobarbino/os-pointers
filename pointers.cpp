@@ -20,6 +20,14 @@ int main(int argc, char **argv)
     double average;
 
     // Sequence of user input -> store in fields of `student`
+    student.id = promptInt("Please enter the student's id number: ", 0, 999999999);
+    cout << "Please enter the student's first name: ";
+    cin >> student.*f_name;
+    cout << "Please enter the student's last name: ";
+    cin >> student.*l_name;
+    student.n_assignments = promptInt("Please enter how many assignments were graded: ", 1, 134217728)
+
+
 
     // Call `CalculateStudentAverage(???, ???)`
     // Output `average`
@@ -35,6 +43,13 @@ int main(int argc, char **argv)
 int promptInt(std::string message, int min, int max)
 {
     // Code to prompt user for an int
+    int userInput;
+    cout << message;
+    while (!(cin >> userInput && userInput >= min && userInput <= max)) {
+        cout << "Sorry, I cannot understand your answer";
+        cout << message;
+    }
+    return userInput;
 }
 
 /*
@@ -45,6 +60,13 @@ int promptInt(std::string message, int min, int max)
 double promptDouble(std::string message, double min, double max)
 {
     // Code to prompt user for a double
+    double userInput;
+    cout << message;
+    while (!(cin >> userInput && userInput >= min && userInput <= max)) {
+        cout << "Sorry, I cannot understand your answer";
+        cout << message;
+    }
+    return userInput;
 }
 
 /*
