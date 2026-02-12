@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     cout << "Please enter the student's last name: ";
     cin >> student.*l_name;
     student.n_assignments = promptInt("Please enter how many assignments were graded: ", 1, 134217728)
-
+    
 
 
     // Call `CalculateStudentAverage(???, ???)`
